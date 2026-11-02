@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMKM Content Master PRO | RuangDigital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>UMKM Content Master <span>PRO</span></h1>
+      <p>RuangDigital — Belanja Cerdas, Bisnis Makin Sukses.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="welcome">
+      <h2>Kelola Konten Bisnis Lebih Mudah</h2>
+      <p>Buat caption promosi, cari ide konten, dan susun kalender posting untuk UMKM Anda.</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h3 id="captionCount">0</h3>
+        <p>Caption tersimpan</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="ideaCount">30</h3>
+        <p>Ide konten tersedia</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="calendarProgress">0%</h3>
+        <p>Progres kalender</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Profil Bisnis</h2>
+      <div class="form-grid">
+        <input id="businessName" placeholder="Nama bisnis">
+        <input id="businessType" placeholder="Jenis bisnis, contoh: Kuliner">
+        <input id="mainProduct" placeholder="Produk utama">
+        <input id="targetAudience" placeholder="Target pelanggan">
+        <input id="businessAdvantage" placeholder="Keunggulan bisnis">
+        <input id="contact" placeholder="Kontak bisnis (opsional)">
+      </div>
+      <button id="saveProfile">Simpan Profil</button>
+      <p id="profileMessage" class="message"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Caption Generator</h2>
+      <label for="captionType">Jenis caption</label>
+      <select id="captionType">
+        <option value="product">Promosi produk</option>
+        <option value="benefit">Manfaat produk</option>
+        <option value="promo">Promo diskon</option>
+        <option value="education">Edukasi</option>
+        <option value="engagement">Interaksi pelanggan</option>
+        <option value="story">Cerita bisnis</option>
+      </select>
+      <textarea id="captionInput" rows="4" placeholder="Masukkan nama produk atau topik konten..."></textarea>
+      <button id="generateCaption">Buat Caption</button>
+      <textarea id="captionResult" rows="7" placeholder="Hasil caption akan muncul di sini..."></textarea>
+      <div class="button-row">
+        <button id="copyCaption" class="secondary">Salin Caption</button>
+        <button id="saveCaption" class="secondary">Simpan Caption</button>
+        <button id="downloadCaption" class="secondary">Download TXT</button>
+      </div>
+      <p id="captionMessage" class="message"></p>
+    </section>
+
+    <section class="panel">
+      <h2>30 Ide Konten UMKM</h2>
+      <input id="ideaSearch" placeholder="Cari ide konten...">
+      <div id="ideaList" class="idea-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Kalender Konten 30 Hari</h2>
+      <p>Tandai konten yang sudah selesai dibuat.</p>
+      <div class="progress-track">
+        <div id="progressBar"></div>
+      </div>
+      <div id="calendarList" class="calendar-list"></div>
+      <button id="resetCalendar" class="secondary">Reset Kalender</button>
+    </section>
+
+    <section class="panel">
+      <h2>Promo Generator</h2>
+      <input id="promoProduct" placeholder="Nama produk">
+      <select id="promoType">
+        <option value="discount">Promo diskon</option>
+        <option value="bundle">Promo bundling</option>
+        <option value="new">Produk baru</option>
+        <option value="limited">Promo terbatas</option>
+        <option value="thanks">Terima kasih pelanggan</option>
+      </select>
+      <button id="generatePromo">Buat Teks Promo</button>
+      <textarea id="promoResult" rows="5" placeholder="Teks promo muncul di sini..."></textarea>
+      <button id="copyPromo" class="secondary">Salin Promo</button>
+    </section>
+
+    <section class="panel">
+      <h2>Caption Tersimpan</h2>
+      <div id="savedCaptions"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 RuangDigital — UMKM Content Master PRO</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
